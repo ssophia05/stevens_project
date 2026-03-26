@@ -8,3 +8,13 @@ First, I made a boxplot with jittered points comparing forehead patch area betwe
 
 I also created a scatterplot showing colony size versus patch area to see if birds in larger colonies tend to have different patch sizes. The points appear scattered with no obvious relationship, suggesting there is no strong relationship between colony size and patch area.
 
+## Linear Model Analysis
+
+For the linear modeling portion of the assignment, I tested the hypothesis that as forehead patch area increases, forehead brightness also increases.
+
+I fit a univariate linear regression model using patch area as the predictor and forehead brightness as the response. The results showed a weak negative relationship between patch area and brightness, suggesting that the data does not support the hypothesis.
+
+Diagnostic plots were built using the `check_model()` function to evaluate model assumptions. The residuals were mostly scattered around zero with slight curvature, indicating that the assumption of linearity is mostly satisfied but not perfect.
+
+Finally, I created a scatterplot with a fitted regression line to visualize the relationship between patch area and brightness. The plot shows high variability and no strong linear trend.
+
