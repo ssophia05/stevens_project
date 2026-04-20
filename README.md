@@ -1,5 +1,7 @@
 # stevens_project
 
+#KL - can you clean up your README and include the names of the files and names of scripts here for every assignment?
+
 # Week 3 Assignment
 
 For this assignment I explored the cliff swallow plumage patch dataset using ggplot. My goal was to visualize relationships between specific variables to see if there were differences between groups.
