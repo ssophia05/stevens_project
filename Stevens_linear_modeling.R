@@ -14,6 +14,8 @@ summary(model)
 # residuals scattered around 0 so no clear pattern
 # assumptions of linearity mostly satisfied
 check_model(model, check="linearity")
+#KL - need to check other model diagnostics, e.g.
+plot(model)
 
 # plotting relationship between patch area and brightness
 # weak negative relationship between patch area and brightness suggesting against hypothesis
