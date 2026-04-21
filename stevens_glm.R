@@ -12,6 +12,7 @@ hist(swallow_dat$Colony.Size)
 # Poisson GLM
 g1 = glm(Colony.Size~Area,data=swallow_dat, family="poisson");
 summary(g1)
+#can you use a poisson? is this overdispersed?
 
 library(effects)
 plot(allEffects(g1))
@@ -31,6 +32,7 @@ swallow_dat$yhat2 = predict(g1,type="response")
 head(dat.new)
 head(swallow_dat)
 
+library(ggplot2)
 plot1=ggplot(data=swallow_dat,aes(x=Area,y=Colony.Size))+
   geom_point(size=2,shape =1) +
   geom_line(data=dat.new, aes(x=Area,y=yhat))
